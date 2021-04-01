@@ -1,0 +1,29 @@
+<!--pages/index4/follow.wxml-->
+
+
+<view style="margin: 30px;text-align: center;">我的关注</view>
+
+关注分为两种，一种是关注我的，一种是我关注的。
+<view></view>
+
+<block>
+  我关注的人
+  <button wx:for="{{following}}">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">{{item.name}} </view>
+    </view>
+  </button>
+</block>
+
+<block>
+  关注我的人
+  <button wx:for="{{follower}}">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <view class="flex-item bc_green">{{item.name}} </view>
+    </view>
+  </button>
+</block>
+
+<navigator class="content" hover-class="none" open-type="navigateBack">
+      <button>返回</button>
+</navigator>

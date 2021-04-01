@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "wux-circle": "../../dist/circle/index",
+    "wux-icon": "../../dist/icon/index",
+    "wux-button": "../../dist/button/index",
+    "wux-tabs": "../../dist/tabs/index",
+    "wux-tab": "../../dist/tab/index",
+    "wux-badge": "../../dist/badge/index"
+  }
+}

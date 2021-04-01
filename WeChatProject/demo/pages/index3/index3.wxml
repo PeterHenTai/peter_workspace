@@ -1,0 +1,19 @@
+<!--pages/index3/index3.wxml-->
+<view class="intro">备用</view>
+<button bindtap='connectLocal'>测试后端接口</button>
+<button bindtap='testLogin'>查看用户信息</button>
+<button open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo">测试登陆</button>
+<!-- 需要使用 button 来授权登录 -->
+<button
+  wx:if="{{canIUse}}"
+  open-type="getUserInfo"
+  bindgetuserinfo="bindGetUserInfo"
+>
+  授权登录
+</button>
+<view wx:else>请升级微信版本</view>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+
+
+

@@ -1,0 +1,53 @@
+/* pages/index/article.wxss */
+Page{
+  background-color: #D9C9BA;
+}
+
+/* <view class='article-top'>
+      <view class='article-title'>{{articleInfo.title}}</view>
+      <view class="article-favor {{article.like?'icon-favorfill':'icon-favor'}}"></view>
+      <view class='article-share icon-upload'></view>
+    </view>
+    <view class='article-sub-top'>
+      <view class='article-dynasty'>{{articleInfo.dynasty}}</view>
+      <view class='article-author'>{{articleInfo.author}}</view>
+    </view>
+    <view class='article'>{{articleInfo.article}}</view>
+    <view class='article-content'>{{articleInfo.content}}</view> */
+.cu-item{
+  padding: 50rpx;
+}
+.article-top{
+  display: flex; 
+  align-items:center;
+  justify-content: space-between;
+}
+
+.article-title{
+  font-size: 48rpx;
+  margin:50rpx 0; 
+  font-weight:bold;
+  letter-spacing:2px;
+}
+.article-top .favor,
+.article-top .share{
+  color:#D9C9BA;
+  font-size:50rpx;
+  margin-left:30rpx;
+}
+
+.article-sub-top{
+  font-size: 30rpx;
+  margin-top:20rpx; 
+  letter-spacing:1px;
+}
+
+.article,.article-content{
+  margin-top:50rpx;
+  font-size: 30rpx; 
+  text-indent:60rpx;
+  line-height:200%;
+  letter-spacing:1px;
+}
+
+

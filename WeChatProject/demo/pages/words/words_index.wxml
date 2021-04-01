@@ -1,0 +1,41 @@
+<!--words_index.wxml-->
+<view class="word_index_container">
+
+  <view class="word_index_tabs">
+    <wux-tabs  defaultCurrent="tab1" theme="dark">
+      <wux-tab key="tab1" title="完成度"></wux-tab>
+      <wux-tab key="tab2" title="打卡日历"></wux-tab>
+    </wux-tabs>
+  </view>
+  <wux-white-space />
+  <wux-white-space />
+
+  <view class="word_index_circle">
+    <wux-circle percent="{{precent}}" sAngle = "270" size="{{winWidth * 0.8}}" strokeWidth="{{winWidth * 25/375}}" color="#D9C9BA" backgroundColor="#e5e5e5" >
+    {{ precent + '%'}} 
+    </wux-circle>
+  </view>
+
+  <view class="word_index_task">
+    <view class='status'>
+      <wux-icon type='ios-radio-button-on' color="#ffffff" size="20"/> 
+      <text>{{word_learing}}</text>
+      <text>学习中字词</text>
+    </view>
+    <view class='status'>
+      <wux-icon type='ios-checkmark-circle' color="#ffffff" size="20"/>
+      <text>{{word_learned}}</text>
+      <text>已学习字词</text>
+    </view>
+    <view class='status'>
+      <wux-icon type='ios-close-circle' color="#ffffff" size="20"/>
+      <text>{{word_unlearn}}</text> 
+      <text>未学习字词</text>
+    </view>
+  </view>
+
+  <view class="add_start_btn">
+    <button class="word_start_study" role="button" bindtap="clickStudy">开始学习</button>
+  </view>
+
+</view>

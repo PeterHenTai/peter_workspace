@@ -1,0 +1,70 @@
+<!--pages/index4/favor.wxml-->
+
+<view class="whole swiper-content {{TabCur==0? 'content-active' : ''}}" bindtouchstart="touchStart" bindtouchend="touchEnd" >
+
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub {{index==TabCur?'text-brown cur':''}}" wx:for="{{3}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+      {{tabNav[index]}}
+    </view>
+  </view>
+</scroll-view>
+
+  <text class='margin-top'></text>
+
+  <!-- 
+      还是从后端请求，后端需要先在数据库上投影
+   -->
+
+   
+  <block wx:if="{{TabCur==0}}">
+    <block wx:for="{{favors.yiju}}">
+      <navigator open-type="navigate" hover-class='navigator-hover' url="/pages/index/article?pushID={{item.id}}">
+        <view class="cu-bar bg-white solid-bottom margin-top">
+          <view class="action">
+            <text class="cuIcon-title left text-black text-bold">{{item.name}}</text>
+            <text text-align='right'>【{{item.dynasty}}】{{item.author}}</text>
+          </view>
+        </view>
+        <view class="padding bg-white">
+          <view class="flex flex-wrap">
+            <view class="swiper-item-preview">{{item.intro}}</view>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </block>
+
+  <block wx:if="{{TabCur==1}}">
+    <block wx:for="{{favors.learn}}">
+      <navigator open-type="navigate" hover-class='navigator-hover' url=".">
+        <view class="cu-bar bg-white solid-bottom margin-top">
+          <view class="action">
+            <text class="cuIcon-title left text-black text-bold"> {{item.name}} \n</text>
+            <view class="swiper-item-preview">（《{{item.from_which}}》）</view>
+          </view>
+        </view>
+        <view class="padding bg-white">
+          <view class="flex flex-wrap">
+            <view class="swiper-item-preview">{{ item.meaning }}</view>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </block>
+
+  
+  <block wx:if="{{TabCur==2}}">
+    <view class="margin-top">
+    </view>
+    <block wx:for="{{favors.vocab}}">
+      <navigator open-type="navigate" hover-class='navigator-hover' url="/pages/index/searchResult?word={{item.name}}">
+        <view class="cu-bar bg-white solid-bottom">
+          <view class="action">
+            <text class="cuIcon-title left">{{item.name}} \n</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </block>
+</view>
