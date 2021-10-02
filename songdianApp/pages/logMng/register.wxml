@@ -1,0 +1,33 @@
+<!--pages/logMng/register.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="weui-form">
+		<view class="weui-form__text-area">
+			<h2 class="weui-form__title">输入账号和密码</h2>
+			<view class="weui-form__desc">账号不要超过20个字符，请不要包含‘/’‘\’</view>
+		</view>
+		<view class="weui-form__control-area">
+			<view class="weui-cells__group weui-cells__group_form">
+				<view class="weui-cells weui-cells_form">
+					<view class="weui-cell weui-cell_active">
+						<view class="weui-cell__hd"><label class="weui-label">账号</label></view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="填写账号"  bindinput="bindAcount" placeholder-class="weui-input__placeholder" />
+						</view>
+					</view>
+					<view class="weui-cell weui-cell_active">
+						<view class="weui-cell__hd">							
+                            <label class="weui-label">密码</label>
+                        </view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="填写密码"  bindinput="bindPassword" password="true" placeholder-class="weui-input__placeholder" />
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="weui-form__opr-area">
+			<a class="weui-btn weui-btn_primary" bindtap="switchToVerifyPassword">确定</a>
+		</view>
+	</view>
+</view>
+

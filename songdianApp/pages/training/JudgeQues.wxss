@@ -1,0 +1,17 @@
+/* pages/training/JudgeQues.wxss */
+
+.weui-flex__item1{
+  margin:auto;
+}
+
+.weui-flex__item2{
+  margin:auto;
+}
+
+.weui-flex__item3{
+  margin:auto;
+}
+
+.weui-form{
+  margin: auto;
+}

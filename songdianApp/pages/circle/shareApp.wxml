@@ -1,0 +1,5 @@
+<!--pages/circle/shareApp.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+  <image src="../../images/app_logo.png"></image>
+  <button open-type="share">分享</button>
+</view>

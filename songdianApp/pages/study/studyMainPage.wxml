@@ -1,0 +1,65 @@
+<!--pages/study/study_01.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+<view class="page__bd page__bd_spacing">
+	<view class="weui-flex">
+			<view class="weui-flex__item">
+				<view class="placeholder">总条目数/当前条目: {{totalEntry}}/{{gotEntry}}
+				</view>
+			</view>
+	</view>
+	<scroll-view class="weui-flex" scroll-y="true" style="height: 900rpx;">
+		<view class="weui-article scroll-view-item">
+      <view class="weui-article__h1">{{entry_class}}
+			</view>
+      <view class="weui-article__section">
+        <view class="weui-article__section">
+          <view class="weui-article__h2">{{entry_from}}</view>
+          <view class="weui-article__p">{{entry_field}}</view>
+        </view>
+      </view>
+    </view>
+	</scroll-view>
+	<view class="weui-flex">
+    <view class="weui-flex__item">
+			<view class="weui-flex-btn">
+				<view class="button-sp-area cell">
+					<a class="weui-btn weui-btn_primary" bindtap="NextEntryCb">下一条</a>
+				</view>
+			</view>
+    </view>
+    <view class="weui-flex__item" wx:if="{{showSouCangIcon}}" bindtap="clickSouCang">
+			<image class="soucang" src="{{soucangIconUrl}}"></image>
+		</view>
+	</view>
+</view>
+
+<view class="fadeIn" wx:if="{{isEnd}}">
+    <view class="weui-mask"></view>
+    <view class="weui-dialog weui-skin_android">
+        <view class="weui-dialog__hd"><strong class="weui-dialog__title">完成提示</strong></view>
+        <view class="weui-dialog__bd">
+            恭喜！您已识记完本书所有条目！
+        </view>
+        <view class="weui-dialog__ft">
+            <a class="weui-dialog__btn weui-dialog__btn_default" bindtap="quitStudy">退出</a>
+            <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="studyAgain">再记一遍</a>
+        </view>
+    </view>
+</view>
+
+<view class="fadeIn {{hideToast ? 'fadeOut' : ''}}" wx:if="{{toast}}">
+	<view class="weui-mask_transparent"></view>
+	<view class="weui-toast">
+		<i class="weui-icon-success-no-circle weui-icon_toast"></i>
+		<view class="weui-toast__content">已收藏</view>
+	</view>
+</view>
+
+<view class="fadeIn {{hideToast ? 'fadeOut' : ''}}" wx:if="{{untoast}}">
+	<view class="weui-mask_transparent"></view>
+	<view class="weui-toast">
+		<i class="weui-icon-success-no-circle weui-icon_toast"></i>
+		<view class="weui-toast__content">已取消收藏</view>
+	</view>
+</view>
+</view>

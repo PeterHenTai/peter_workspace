@@ -1,0 +1,28 @@
+<!--pages/mine/about.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+  <view class="weui-article__section">
+      <view class="weui-article__h3">版本号：1.0</view>
+      <view class="weui-article__h3">开发者信息</view>
+      <view class="weui-article__p">
+        LiYang Huang
+      </view>
+      <view class="weui-article__p">
+        Huan Qin
+      </view>
+      <view class="weui-article__p">
+        ShiHuai Wen
+      </view>
+      <view class="weui-article__h3">联系我们</view>
+      <view class="weui-article__p">
+        Q群：887283683
+      </view>
+      <view class="weui-article__h3">github地址</view>
+      <view class="weui-article__p">
+        https://github.com/PeterHenTai/peter_workspace.git
+      </view>
+  </view>
+
+</view>
+
+
+

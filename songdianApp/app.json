@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/study/study",
+    "pages/circle/circle",
+    "pages/mine/mine",
+    "pages/training/training",
+    "pages/study/studyMainPage",
+    "pages/training/SelectQuesType",
+    "pages/training/SelectQues",
+    "pages/training/JudgeQues",
+    "pages/mine/sys_setting",
+    "pages/mine/about",
+    "pages/circle/achive",
+    "pages/circle/shareApp",
+    "pages/circle/ranking",
+    "pages/logMng/unLog",
+    "pages/logMng/LogIn",
+    "pages/logMng/register",
+    "pages/logMng/verifyPassword",
+    "pages/logMng/verifyCode"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "颂典",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/study/study",
+        "text": "记忆",
+        "iconPath": "images/study.png",
+        "selectedIconPath": "images/study-active.png"
+      },
+      {
+        "pagePath": "pages/training/training",
+        "text": "训练",
+        "iconPath": "images/train.png",
+        "selectedIconPath": "images/train-active.png"
+      },
+      {
+        "pagePath": "pages/circle/circle",
+        "text": "圈子",
+        "iconPath": "images/circle.png",
+        "selectedIconPath": "images/circle-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

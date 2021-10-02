@@ -1,0 +1,9 @@
+<!--pages/logMng/unLog.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+  <image src="../../images/app_logo.png"></image>
+  <view class="log-title">请先登录或注册!</view>
+	<view class="button-sp-area">
+		<a class="weui-btn weui-btn_primary" bindtap="login">登录</a>
+			<a class="weui-btn weui-btn_default" bindtap="register">注册</a>
+	</view>
+</view>

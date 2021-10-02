@@ -1,0 +1,9 @@
+<!--pages/mine/sys_setting.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+<view class="weui-cell weui-cell_switch">
+    <view class="weui-cell__bd">夜间模式</view>
+    <view class="weui-cell__ft">
+        <switch bindchange="changeTheme" checked />
+    </view>
+</view>
+</view>

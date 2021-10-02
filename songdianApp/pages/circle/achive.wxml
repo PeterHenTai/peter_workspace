@@ -1,0 +1,34 @@
+<!--pages/circle/achive.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+  <view class="weui-cells__title">已解锁成就</view>
+  <view class="weui-cells weui-cells_after-title">
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+              <image class="achive-icon" src="../../images/achive_unlock.png"></image>
+          </view>
+          <view class="weui-cell__bd">初入萌新</view>
+      </navigator>
+  </view>
+
+  <view class="weui-cells__title">未解锁成就</view>
+  <view class="weui-cells weui-cells_after-title">
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+              <image class="achive-icon" src="../../images/achive_lock.png"></image>
+          </view>
+          <view class="weui-cell__bd">记忆大师</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+              <image class="achive-icon" src="../../images/achive_lock.png"></image>
+          </view>
+          <view class="weui-cell__bd">学习标兵</view>
+      </navigator>
+      <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+              <image class="achive-icon" src="../../images/achive_lock.png"></image>
+          </view>
+          <view class="weui-cell__bd">老中医</view>
+      </navigator>
+  </view>
+</view>

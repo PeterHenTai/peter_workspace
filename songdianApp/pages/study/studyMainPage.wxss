@@ -1,0 +1,26 @@
+/* pages/study/study_01.wxss */
+.weui-flex-btn{
+  position:fixed;
+  bottom:10rpx;
+  left:0;
+  right:0
+}
+
+.soucang{
+  position:fixed;
+  bottom:40rpx;
+  left:650rpx;
+  right:0;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.placeholder{
+  margin:5px;
+  padding:0 10px;
+  text-align:center;
+  background-color:var(--weui-BG-1);
+  height:2.3em;
+  line-height:2.3em;
+  color:var(--weui-FG-1)
+}

@@ -1,0 +1,21 @@
+<!--words_index.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+  <view class="word_index_container">
+  <calendar selected="{{selected}}" bindselect="bindselect" bindgetdate="bindgetdate" />
+  <image class="testIcon" src="../../images/test.png"></image>
+  <view class="word_index_task">
+    <view class='status'>
+      <text>{{select_ques}}</text>
+      <text>选择题</text>
+    </view>
+    <view class='status'>
+      <text>{{judge_ques}}</text> 
+      <text>判断题</text>
+    </view>
+  </view>
+
+  <view class="add_start_btn">
+    <button class="word_start_study" role="button" bindtap="Start">开始训练</button>
+  </view>
+</view>
+</view>

@@ -1,0 +1,47 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__hd">
+		<view class="page__title">条文识记</view>
+		<view class="page__desc">选择一部中医经典著作开始记忆条文</view>
+	</view>
+	<view class="weui-grids">
+		<a class="weui-grid" bindtap="switchToPageStudy_01_from1">
+			<view class="weui-grid__icon">
+				<image src="../../images/book.png" alt></image>
+			</view>
+			<view class="weui-grid__label">黄帝内经</view>
+		</a>
+		<a class="weui-grid" bindtap="switchToPageStudy_01_from2">
+			<view class="weui-grid__icon">
+				<image src="../../images/book.png" alt></image>
+			</view>
+			<view class="weui-grid__label">伤寒论</view>
+		</a>
+		<a class="weui-grid" bindtap="switchToPageStudy_01_from3">
+			<view class="weui-grid__icon">
+				<image src="../../images/book.png" alt></image>
+			</view>
+			<view class="weui-grid__label">金匮要略</view>
+		</a>
+		<a class="weui-grid" bindtap="switchToPageStudy_01_from4">
+			<view class="weui-grid__icon">
+				<image src="../../images/book.png" alt></image>
+			</view>
+			<view class="weui-grid__label">温病学</view>
+		</a>
+		<a class="weui-grid" bindtap="addMore">
+			<view class="weui-grid__icon">
+				<image src="../../images/more.png" alt></image>
+			</view>
+			<view class="weui-grid__label">添加</view>
+		</a>
+	</view>
+	<view class="fadeIn" wx:if="{{showTODO}}">
+      <view class="weui-mask"></view>
+      <view class="weui-dialog">
+          <view class="weui-dialog__bd">此功能将在后续版本中开放</view>
+          <view class="weui-dialog__ft">
+              <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="close">知道了</a>
+          </view>
+      </view>
+  </view>
+</view>
