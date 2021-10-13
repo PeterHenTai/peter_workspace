@@ -8,7 +8,7 @@
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
-  padding-top: 100rpx;
+  padding-top: 13vh;
   box-sizing: border-box;
   transition: all 0.3s;
   opacity: 0;
@@ -39,7 +39,6 @@
   position: relative;
   height: 100rpx;
   /* width: 100%; */
-  background: #fff;
   /* padding: 0 30rpx; */
   z-index: 10000;
 }
@@ -79,20 +78,20 @@
 }
 
 .iconfont .left.color {
-  border-right-color: #52b8f5;
+  border-right-color: var(--main-color);
 }
 
 .iconfont .right.color {
-  border-left-color: #52b8f5;
+  border-left-color: var(--main-color);
 }
 
 .btn {
   margin: 0 30rpx;
   width: 240rpx;
   height: 53rpx;
-  border: 1rpx solid #52b8f5;
+  border: 1rpx solid var(--main-color);
   border-radius: 26rpx;
-  color: #52b8f5;
+  color: var(--main-color);
   font-size: 26rpx;
   box-sizing: border-box;
 }
@@ -114,13 +113,13 @@
   padding-left: 20rpx;
   height: 50rpx;
   line-height: 50rpx;
-  border: 1px #52b8f5 solid;
+  border: 1px var(--main-color) solid;
   border-right: none;
   font-size: 28rpx;
   border-top-left-radius: 50rpx;
   border-bottom-left-radius: 50rpx;
-  color: #52b8f5;
-  background: rgba(82, 184, 245, 0.1);
+  color: var(--main-color);
+  background: rgba(216, 30, 6, 0.1);
 }
 
 .date-befor, .date-after {
@@ -151,7 +150,7 @@
   width: 100%;
   text-align: center;
   line-height: 80rpx;
-  color: #52b8f5;
+  color: var(--main-color);
 }
 
 .calendar-body {
@@ -183,7 +182,7 @@
 }
 
 .date-current {
-  background: #52b8f5;
+  background: var(--main-color);
   color: #fff;
 }
 
@@ -205,7 +204,7 @@
   height: 100rpx;
   line-height: 100rpx;
   text-align: center;
-  color: #52b8f5;
+  color: var(--main-color);
 }
 
 .flex-center {
