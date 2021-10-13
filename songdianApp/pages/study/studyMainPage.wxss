@@ -1,7 +1,8 @@
 /* pages/study/study_01.wxss */
+
 .weui-flex-btn{
   position:fixed;
-  bottom:10rpx;
+  bottom:120rpx;
   left:0;
   right:0
 }

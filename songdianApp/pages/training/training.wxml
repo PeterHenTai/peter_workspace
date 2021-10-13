@@ -1,8 +1,15 @@
 <!--words_index.wxml-->
 <view class="page" data-weui-theme="{{theme}}">
   <view class="word_index_container">
+
+  <view class="calendar">
   <calendar selected="{{selected}}" bindselect="bindselect" bindgetdate="bindgetdate" />
-  <image class="testIcon" src="../../images/test.png"></image>
+  </view>
+
+  <view class="testIcon">
+  <image src="../../images/test.png"></image>
+  </view>
+
   <view class="word_index_task">
     <view class='status'>
       <text>{{select_ques}}</text>
